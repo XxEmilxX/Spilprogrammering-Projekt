@@ -11,6 +11,14 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
+    public void LoadSceneInstance(string name)
+    {
+        SceneManager.LoadScene(name);
+    }
+    public void LoadSceneInstance(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
     public static void LoadScene(string name, bool async)
     {
         if(async)
